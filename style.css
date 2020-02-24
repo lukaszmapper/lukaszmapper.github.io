@@ -535,7 +535,7 @@ footer {
         width: 30%;
     }
     nav a {
-        font-size: 14.5px;
+        font-size: 12px;
     }
     .artykuł, .serie, .plany, .kontakt {
         font-size: 1em;
@@ -578,7 +578,7 @@ footer {
         }
     }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 375px) {
      header {
         font-size: 7px;
         padding: 20px;
