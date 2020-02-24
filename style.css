@@ -1,0 +1,658 @@
+* {
+    box-sizing: border-box;
+    text-shadow: 5px 5px 5px black;
+}
+html {
+    scroll-behavior: smooth;;
+}
+body {
+    font-family: tahoma, arial, verdana, sans-serif;
+    padding: 10px;
+    background-color: #e1e1e1;
+}
+::selection {
+    color: black;
+    background-color: white;
+}
+header {
+    width: 100%;
+    padding: 30px;
+    background-image: linear-gradient(#00c24d, #00a62f);
+    color: white;
+    font-size: 30px;
+    border: 1px ridge black;
+    border-bottom: none;
+    box-shadow: 5px 5px 5px black;
+}
+img.logo {
+    width: 15%;
+    height: auto;
+    float: left;
+    position: relative;
+    animation-name: animacja;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes animacja {
+    0% {left: 0px;}
+    50% {left: 20%;}
+    100% {left: 0px;}
+}
+h1 {
+    position: relative;
+    left: 35%;
+    display: inline-block;
+    animation-name: tekst;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+} 
+@keyframes tekst {
+    0% {left: 35%;}
+    50% {left: 0%;}
+    100% {left: 35%;}
+}
+section {
+    width: 100%;
+    height: 350vh;
+}       
+nav {
+    background-image: linear-gradient(to right, rgb(50, 136, 230), rgb(30, 82, 172));
+    width: 100%;
+    overflow: hidden;
+    border: 1px ridge black;
+    border-top: none;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px black;
+}
+nav a {
+    float: left;
+    color: #e1e1e1;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    transition: 0.7s;
+}     
+nav a:hover {
+    color: white;
+    background-color: #49c2ff;
+    transition: 0.7s;
+}
+.lewa {
+    float: left;
+    width: 66%;
+    height: auto;
+}
+article {
+    box-shadow: 5px 5px 5px black;
+}
+.prawa > div {
+    box-shadow: 5px 5px 5px black;
+}
+.artykuł {
+    font-size: 30px;
+    background-image: linear-gradient(rgb(50, 136, 230), rgba(30, 82, 172, 0.9));
+    padding: 20px;
+    margin-top: 15px;
+    color: #f1f1f1;
+    margin-right: 15px;
+    transition: 1.5s;
+}
+.artykuł:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+h2 {
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+article p {
+    margin-left: 20px;
+    text-indent: 20px;
+}
+.prawa {
+    float: left;
+    width: 34%;
+    height: auto;
+}
+.kanał {
+    background-image: linear-gradient(#49cf56, MediumSeaGreen);
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+    transition: 1.5s;
+}
+.kanał:hover {
+    border-radius: 25px;
+    transition: 1.5s;
+}
+.kanał a {
+    display: block;
+    background-color: #cc0000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px ridge black;
+    transition: 1s;
+}
+.kanał a:hover {
+    background-color: red;
+    border-radius: 15px;
+    transition: 1s;
+}
+.obraz {
+    background-image: linear-gradient(#009bff, #00dabf);
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+    color: white;
+    transition: 1.5s;
+}
+.obraz:hover{
+    border-radius: 25px;
+    transition: 1.5s;
+}
+.obraz img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 3px ridge red;
+}
+.serie {
+    color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+    background-image: linear-gradient(#0072ff, #2bafff);
+    margin-top: 15px;
+    margin-right: 15px;
+    height: auto;
+    transition: 1.5s;
+}
+.serie:hover {
+    transition: 1.5s;
+    border-radius: 30px;
+}
+.serie h4 {
+    text-align: center;
+    font-size: 40px;
+}
+.plany {
+    color: #f1f1f1;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    height: auto;
+    background-image: linear-gradient(#65c851, #659d51);
+    transition: 1.5s;
+}
+.plany:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+.kontakt {
+    color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    height: auto;
+    background-image: linear-gradient(#006cff, #0038ff);
+    transition: 1.5s;
+}
+.kontakt:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+.film {
+    padding: 20px;
+    margin-top: 15px;
+    color: white;
+    background-image: linear-gradient(#008500, #00b315);
+    transition: 1.5s;
+    font-size: 25px;
+}
+.film:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+iframe {
+    height: 339px;
+    width: 100%;
+    border: 2px ridge red;
+}
+a[target=ramka] {
+    text-decoration: none;
+    display: inline-block;
+    background-color:rgb(30, 82, 172);
+    width: calc(25% - 6px);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 1s;
+}
+a[target=ramka]:hover {
+    background-color:rgb(50, 136, 230);
+    transition: 1s;
+}
+.subskrypcje {
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+    background-image: linear-gradient(rgb(208, 228, 250), #9edaff);
+    transition: 1.5s;
+}
+.subskrypcje:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+}
+.zarabianie {
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+    background-image: linear-gradient(#00c437, #008e15);
+    color: white;
+    transition: 1.5s;
+}
+.zarabianie:hover {
+    border-radius: 30px;
+    transition: 1.5s;
+}
+footer {
+    width: 100%;
+    float: left;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background-image: linear-gradient(#007081, #005681);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px black;
+    border: 1px ridge black;
+}
+.dol {
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+}
+.tel {
+    display: none;
+}
+@media screen and (max-width: 1790px){
+    a[target="ramka"] {
+        font-size: 16px;
+    }
+    iframe {
+        height: 305px;
+    }
+    .zarabianie {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 1680px) {
+    a[target="ramka"] {
+        width: calc(50% - 20px);
+        margin: 5px;
+        font-size: 18px;
+    }
+    iframe {
+        height: 283px;
+    }
+    .zarabianie {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1575px) {
+    header {
+        font-size: 25px;
+    }
+    a[target="ramka"] {
+        font-size: 16px;
+    }
+    iframe {
+        height: 265px;
+    }
+    .artykuł, .serie, .plany, .kontakt {
+        font-size: 27px;
+    }
+    section {
+        height: 400vh;
+    }
+}
+@media screen and (max-width: 1460px) {
+    a[target="ramka"] {
+        font-size: 18px;
+    }
+    iframe {
+        height: 250px;
+    }
+    section {
+        height: 400vh;
+    }
+}
+@media screen and (max-width: 1315px) {
+    header {
+        font-size: 23px;
+    }
+    iframe {
+        height: 225px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .lewa, .prawa {
+        width: 100%;
+    }
+    section {
+        height: 850vh;
+    }
+    .artykuł, .serie, .plany, .kontakt {
+        margin-right: 0;
+    }
+    iframe {
+        height: 636px;
+    }
+    a[target="ramka"] {
+        width: calc(25% - 6px);
+        margin: 0;
+        font-size: 18px;
+    }
+    img.logo {
+        width: 20%;
+    }
+    header {
+        font-size: 20px;
+    }
+    h1 {
+    left: 30%;
+    }
+    @keyframes tekst {
+        0% {left: 30%;}
+        50% {left: 0%;}
+        100% {left: 30%;}
+    }
+}
+@media screen and (max-width: 1024px) {
+    h1 {
+        left: 25%;
+    }
+    @keyframes tekst {
+        0% {left: 25%;}
+        50% {left: 0%;}
+        100% {left: 25%;}
+    }
+    iframe {
+        height: 536px;
+    }
+    section {
+        height: 450vh;
+    }
+}
+@media screen and (max-width: 900px) {
+    header {
+        font-size: 16px;
+    }
+    iframe {
+        height: 460px;
+    }
+    a[target="ramka"] {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    iframe {
+        height: 420px;
+    }
+    header {
+        font-size: 16px;
+    }
+    h1 {
+        left: 20%;
+    }
+    @keyframes tekst {
+        0% {left: 20%;}
+        50% {left: 0%;}
+        100% {left: 20%;}
+    }
+    @media screen and (height: 1200px) {
+    section {
+        height: 600vh;
+    }
+    }
+}
+@media screen and (max-width: 768px) {
+    @keyframes tekst {
+        animation-iteration-count: 0;
+    }
+    @keyframes animacja {
+        animation-iteration-count: 0;
+    }
+    img.logo {
+        width: 25%;
+    }
+    header {
+        font-size: 16px;
+    }
+    h1 {
+        left: 10%;
+    }
+    iframe {
+        height: 400px;
+    }
+    section {
+        height: 700vh;
+    }
+    footer {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 640px) {
+    header {
+        font-size: 14px;
+    }
+    h1 {
+        left: 5%;
+    }
+    .artykuł, .serie, .plany, .kontakt {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .serie h4 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .kanał, .obraz, .film, .subskrypcje, .zarabianie {
+        font-size: 20px;
+    }
+    iframe {
+        height: 330px;
+    }
+    section {
+        height: 1350vh;
+    }
+    footer {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 570px) {
+    header {
+        font-size: 12px;
+    }
+    iframe {
+        height: 280px;
+    }
+    a[target="ramka"] {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 530px) {
+    @media screen and (height: 360px) {
+    iframe {
+        height: 250px;
+    }
+    a[target="ramka"] {
+        font-size: 1em;
+        width: calc(50% - 14px);
+        margin: 5px;
+    }
+    section {
+        height: 1600vh;
+    }
+    }
+}
+@media screen and (max-width: 414px) {
+    header {
+        font-size: 8px;
+        padding: 20px;
+    }
+    h1 {
+        left: 5%;
+        width: 63%;
+        display: inline-block;
+    }
+    img.logo {
+        width: 30%;
+    }
+    nav a {
+        font-size: 14.5px;
+    }
+    .artykuł, .serie, .plany, .kontakt {
+        font-size: 1em;
+    }  
+    h2 {
+        font-size: 30px;
+    }
+    .serie h4 {
+        font-size: 20px;
+    } 
+    h3 {
+        font-size: 25px;
+    } 
+    .kanał, .obraz, .film, .subskrypcje, .zarabianie {
+        font-size: 1em;
+    }
+    .kanał a {
+        font-size: 1em;
+    }
+    iframe {
+        height: 200px;
+    }
+    .tel {
+        display: block;
+    }
+    a[target="ramka"] {
+        font-size: 1em;
+        width: calc(50% - 14px);
+        margin: 5px;
+    }
+    footer {
+        font-size: 1em;
+    }
+    section {
+        height: 700vh;
+    }
+    @media screen and (height: 823px) {
+        section {
+            height: 600vh;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+     header {
+        font-size: 7px;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    img.logo {
+        width: 35%;
+    }
+    h1 {
+        margin-top: 15px;
+    }
+    iframe {
+        height: 180px;
+    }
+    section {
+        height: 780vh;
+    }
+    @media screen and (height: 812px) {
+    section {
+        height: 670vh;
+    }
+    }
+}
+@media screen and (max-width: 360px) {
+    header {
+        font-size: 7px;
+        padding: 20px;
+    }
+    img.logo {
+        width: 35%;
+    }
+    section {
+        height: 900vh;
+    }
+    @media screen and (height: 524px) {
+        section {
+            height: 1100vh;
+        }
+    }
+    iframe {
+        height: 170px;
+    }
+}
+@media screen and (max-width: 320px) {
+    img.logo {
+        width: 40%;
+    }
+    h1 {
+        width: 59%;
+        left: 3%;
+        margin-top: 20px;
+    }
+    header {
+        font-size: 6px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    nav a {
+        font-size: 12px;
+        padding: 18.5px;
+    }
+    .artykuł, .serie, .plany, .kontakt {
+        font-size: 14px;
+    }
+    .kanał, .obraz, .film, .subskrypcje, .zarabianie {
+        font-size: 14px;
+    }
+    iframe {
+        height: 140px;
+    }
+    a[target="ramka"] {
+        font-size: 12px;
+    }
+    section {
+        height: 900vh;
+    }
+}
