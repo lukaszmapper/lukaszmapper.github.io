@@ -598,6 +598,7 @@ footer {
     }
     nav a {
         font-size: 12px;
+        padding: 19px;
     }
     @media screen and (height: 812px) {
     section {
