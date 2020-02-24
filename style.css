@@ -596,6 +596,9 @@ footer {
     section {
         height: 780vh;
     }
+    nav a {
+        font-size: 12px;
+    }
     @media screen and (height: 812px) {
     section {
         height: 670vh;
@@ -613,12 +616,9 @@ footer {
     section {
         height: 800vh;
     }
-    nav a {
-        font-size: 12px;
-    }
     @media screen and (height: 524px) {
         section {
-            height: 1100vh;
+            height: 800vh;
         }
     }
     iframe {
