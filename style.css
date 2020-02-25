@@ -512,23 +512,30 @@ footer {
         width: calc(50% - 14px);
         margin: 5px;
     }
-    @media screen and (height: 962px) {
-        section {
-            height: 600vh;
-        }
-    }
     @media screen and (height: 360px) {
     iframe {
         height: 250px;
     }
-    a[target="ramka"] {
-        font-size: 1em;
-        width: calc(50% - 14px);
-        margin: 5px;
-    }
     section {
         height: 1600vh;
     }
+    }
+}
+@media screen and (max-width: 433px) {
+    header {
+         font-size: 8px;
+         padding: 20px;
+    }
+    h1 {
+        left: 5%;
+    }
+    img.logo {
+        width: 30%;
+    }
+    @media screen and (min-height: 960px) {
+        section {
+            height: 500vh;
+        }
     }
 }
 @media screen and (max-width: 414px) {
