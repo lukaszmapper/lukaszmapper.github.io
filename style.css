@@ -570,7 +570,7 @@ footer {
         font-size: 1em;
     }
     section {
-        height: 500vh;
+        height: 700vh;
     }
     @media screen and (height: 823px) {
         section {
@@ -615,11 +615,11 @@ footer {
         width: 35%;
     }
     section {
-        height: 800vh;
+        height: 850vh;
     }
     @media screen and (height: 524px) {
         section {
-            height: 800vh;
+            height: 900vh;
         }
     }
     iframe {
