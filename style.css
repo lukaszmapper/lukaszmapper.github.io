@@ -507,6 +507,16 @@ footer {
     }
 }
 @media screen and (max-width: 530px) {
+    a[target="ramka"] {
+        font-size: 1em;
+        width: calc(50% - 14px);
+        margin: 5px;
+    }
+    @media screen and (height: 962px) {
+        section {
+            height: 600vh;
+        }
+    }
     @media screen and (height: 360px) {
     iframe {
         height: 250px;
