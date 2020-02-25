@@ -535,8 +535,7 @@ footer {
         width: 30%;
     }
     nav a {
-        font-size: 6px;
-        padding: 10px;
+        font-size: 18px;
     }
     .artykuł, .serie, .plany, .kontakt {
         font-size: 1em;
@@ -594,6 +593,10 @@ footer {
     iframe {
         height: 180px;
     }
+    nav a {
+        font-size: 16px;
+        padding: 18px;
+    }
     section {
         height: 780vh;
     }
@@ -622,6 +625,10 @@ footer {
     iframe {
         height: 170px;
     }
+    nav a {
+        font-size: 15px;
+        padding: 16px;
+    }
 }
 @media screen and (max-width: 320px) {
     img.logo {
@@ -636,6 +643,10 @@ footer {
         font-size: 6px;
         padding: 10px;
         padding-bottom: 30px;
+    }
+    nav a {
+        font-size: 12px;
+        padding: 17px;
     }
     .artykuł, .serie, .plany, .kontakt {
         font-size: 14px;
